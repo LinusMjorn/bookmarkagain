@@ -25,5 +25,11 @@ end
     redirect '/bookmarks'
   end
 
+
+get '/bookmarks/:id/edit' do
+  @bookmark_id = params[:id]
+  erb :'bookmarks/edit'
+end
+
   run! if app_file == $0
 end
