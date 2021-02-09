@@ -41,6 +41,7 @@ end
     end
     connection.exec("DELETE FROM bookmarks WHERE id = #{id}")
   end
+  
 
 
 
